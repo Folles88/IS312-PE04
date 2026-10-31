@@ -1,0 +1,45 @@
+/* Sets the page background and default font styles */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #242424;
+    margin: 0;
+}
+
+/* Styles the header */
+header {
+    background-color: #242424;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+/* Arranges the main content in two columns */
+main {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    padding: 1.5rem;
+}
+
+/* Styles each section */
+section {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+/* Styles the footer */
+footer {
+    background-color: #e0e0e0;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Stacks the columns on smaller screens */
+@media (max-width: 600px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
